@@ -1,9 +1,9 @@
-import { AppBar, Box, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, Badge } from '@mui/material';
 import MenuIcon from "@mui/icons-material/Menu";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import React from 'react'
 
-const Header = () => {
+const Header = ({countCartItems}) => {
     return (
         <Box sx={{ display: "flex" }}>
             <AppBar component="nav" sx={{ bgcolor: '#4caf50' }} position="static">
@@ -20,7 +20,9 @@ const Header = () => {
                         Add TO Cart
                     </Typography>
                     <Box>
+                        <Badge badgeContent={countCartItems} color={"primary"}>
                         <ShoppingCartIcon fontSize='large' />
+                        </Badge>
                     </Box>
                 </Toolbar>
             </AppBar>

@@ -2,13 +2,16 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, Typograp
 import React from 'react'
 import Product from './Product'
 
-const AllProduct = ({ products }) => {
+const AllProduct = ({ products, addToCart }) => {
 
     return (
         <Box sx={{ bgcolor: "#e6ee9c", mx: "auto", my: '2' }}>
             <Stack direction="row" spacing={2} sx={{ pt: 2, pb: 2, pl: 2, pr: 2 }}>
                 {
-                    products.map((product) => <Product key={product.id} product={product}></Product>)
+                    products.map((product) => <Product
+                        key={product.id}
+                        product={product}
+                    addToCart={addToCart}></Product>)
                 }
             </Stack>
         </Box>

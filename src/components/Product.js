@@ -1,8 +1,8 @@
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 import React from 'react';
 
-const Product = ({ product }) => {
-    console.log(product)
+const Product = ({ product, addToCart }) => {
+    //console.log(product)
     return (
         <Card sx={{ maxWidth: 315 }}>
             <CardMedia
@@ -20,7 +20,10 @@ const Product = ({ product }) => {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="medium" variant="contained">Add To Cart</Button>
+                <Button size="medium"
+                        variant="contained"
+                        onClick={()=> addToCart(product)}
+                >Add To Cart</Button>
             </CardActions>
         </Card>
     );

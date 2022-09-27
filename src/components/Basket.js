@@ -4,8 +4,9 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox';
 
 
-const Busket = () => {
+const Busket = ({addToCart, cartItems, removeItem}) => {
 
+    //console.log(cartItems)
     return (
         <Box
             sx={{
@@ -22,15 +23,19 @@ const Busket = () => {
             <Paper elevation={3}>
                 <Box sx={{ p: 2 }}>
                     <Typography variant="h4">Cart Items</Typography>
-
-                    <Stack direction="row" spacing={5} alignItems="center" pt={2}>
-                        <Typography variant="h5">Frist items</Typography>
-                        <Box>
-                            <AddBoxIcon fontSize='large'></AddBoxIcon>
-                            <IndeterminateCheckBoxIcon fontSize='large'></IndeterminateCheckBoxIcon>
+                    {
+                        cartItems.map((item)=>
+                    <Stack display="flex" direction="row" spacing={5} alignItems="center" pt={2}>
+                        <Typography flexGrow="1" variant="h5">{item.name}</Typography>
+                        <Box flexGrow="1">
+                            <AddBoxIcon fontSize='large' onClick={()=>addToCart(item)}></AddBoxIcon>
+                            {' '}
+                            <IndeterminateCheckBoxIcon fontSize='large' onClick={()=>removeItem(item)}></IndeterminateCheckBoxIcon>
                         </Box>
-                        <Typography variant="5"> 6 × $240</Typography>
+                        <Typography flexGrow="1" variant="5"> {item.qty} x ${item.price.toFixed(2)} </Typography>
                     </Stack>
+                        )
+                    }
                 </Box>
             </Paper>
         </Box>
