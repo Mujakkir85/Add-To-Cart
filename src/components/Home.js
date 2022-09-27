@@ -26,9 +26,9 @@ const Home = () => {
     }
 
     const removeItem = (product) => {
-        console.log('clicked')
+        //console.log('clicked')
         const productCheck = cartItems.find((item)=>item.id === product.id)
-        console.log(productCheck)
+        //console.log(productCheck)
         if(productCheck.qty === 1){
             setCartItems(cartItems.filter((item)=> item.id !== product.id))
         }

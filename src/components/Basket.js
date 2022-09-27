@@ -6,7 +6,7 @@ import IndeterminateCheckBoxIcon from '@mui/icons-material/IndeterminateCheckBox
 
 const Busket = ({addToCart, cartItems, removeItem}) => {
 
-    //console.log(cartItems)
+    console.log(cartItems)
     return (
         <Box
             sx={{
