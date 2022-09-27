@@ -5,6 +5,7 @@ import Header from './Header';
 import Basket from './Basket'
 import data from '../data';
 import {useState} from "react";
+import Custom from "./Custom";
 
 const Home = () => {
 
@@ -48,6 +49,8 @@ const Home = () => {
                 <AllProduct products={products} addToCart={addToCart}></AllProduct>
                 <Basket addToCart={addToCart} removeItem={removeItem} cartItems={cartItems}></Basket>
             </Stack>
+
+            <Custom></Custom>
 
         </>
     );

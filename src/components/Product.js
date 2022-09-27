@@ -10,6 +10,7 @@ const Product = ({ product, addToCart }) => {
                 height="200"
                 image={`${product.image}`}
                 alt="green iguana"
+                sx={{objectFit:'cover'}}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
