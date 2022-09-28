@@ -1,6 +1,7 @@
-import React from 'react'
-import {Box, Typography, AppBar, Toolbar, IconButton, styled, List, Button, Stack} from "@mui/material";
+import React, {useState} from 'react'
+import {Box, Typography, AppBar, Toolbar, IconButton, styled, List, Button, Stack, Drawer} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const SimpleAppBar = styled(AppBar)(({theme}) =>({
     color: theme.palette.primary.main,
@@ -8,15 +9,42 @@ const SimpleAppBar = styled(AppBar)(({theme}) =>({
     boxShadow: 'none',
 }))
 
+const NavButton = styled(Button)(({theme})=>({
+    color: theme.palette.textcolor.main,
+}))
+
 const Nav = () =>{
-    const navItems = ['HOME', 'SHOP', 'ABOUT', 'CONTACT']
+    const [manuState, setManuState] = useState(false)
+    const navItems = ['HOME', 'SHOP', 'ABOUT', 'CONTACT', 'SHOPPING BAG']
+
+    const openMenu = () =>{
+        setManuState(true)
+    }
+
+    const closeMenu = () =>{
+        setManuState(false)
+    }
     return(
         <Box>
             <SimpleAppBar component="nav">
                 <Toolbar>
-                    <IconButton sx={{display:{sm:'none'}}}>
-                        <MenuIcon></MenuIcon>
-                    </IconButton>
+                        <MenuIcon onClick={openMenu} sx={{display:{sm:'none'}}}>
+                        </MenuIcon>
+                            <Drawer
+                                anchor= "left"
+                                open={manuState}
+                                onclose={closeMenu}
+                                sx={{display:{sm:'none'}}}
+                            >
+                                <Stack direction="column" role="presentation" onClick={closeMenu}>
+                                    {navItems.map((item)=>(
+                                        <NavButton>
+                                            {item}
+                                        </NavButton>
+                                    ))}
+                                </Stack>
+                            </Drawer>
+
                     <Stack sx={{ display: 'flex',
                         flexDirection:'row' ,
                         flexGrow: 1,
@@ -32,9 +60,10 @@ const Nav = () =>{
 
                     <Box sx={{display: {xs:'none', sm:'block'}}}>
                         {navItems.map((item)=>(
-                            <Button>
+                            <NavButton
+                            sx={{px:4,}}>
                                 {item}
-                            </Button>
+                            </NavButton>
                         ))}
                     </Box>
                     </Stack>

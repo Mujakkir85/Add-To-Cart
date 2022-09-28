@@ -11,10 +11,15 @@ const theme = createTheme({
             dark: '#fff',
         },
         background:{
-            bg_main: '#f5f5f5',
+            bg_main: '#fff',
             bg_second: '#FADAAC',
+        },
+        textcolor:{
+            main: '#2E2E2E',
+            second: '#fff',
         }
     }
+    //typography
 })
 
 const MyComponent = () => {
