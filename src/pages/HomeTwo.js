@@ -16,7 +16,7 @@ const theme = createTheme({
             bg_second: '#FADAAC',
         },
         textColor:{
-            main: '#2E2E2E',
+            main: '#9e9e9e',
             second: '#fff',
         }
     },
@@ -24,6 +24,35 @@ const theme = createTheme({
         h2:{
             fontFamily: " 'Prata', serif",
             fontSize: "55px",
+        },
+        body1:{
+            fontSize: '1rem',
+            lineHeight: 1.5,
+            color: '#9e9e9e'
+        }
+    },
+    components:{
+        MuiButton:{
+            variants:[
+                {
+                    props: {variant: 'mainButton'},
+                    style:{
+                        backgroundColor: "#000",
+                        color: "white",
+                        cursor: "pointer",
+                        paddingTop: '15px',
+                        paddingBottom: '15px',
+                        paddingLeft: '45px',
+                        paddingRight: '45px',
+                    }
+
+                }
+            ],
+            defaultProps: {
+                disableElevation: true,
+                disableFocusRipple: true,
+                disableRipple: true,
+            }
         }
     }
 })

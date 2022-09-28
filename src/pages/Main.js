@@ -8,10 +8,10 @@ const Main = () => {
             <Stack sx={{position: 'relative'}}>
                 <Box sx={{position: 'absolute', width: '30%', top: '260px' , left: '95px'}}>
             <Typography variant="h2" sx={{mb:'30px'}} >Shop Together</Typography>
-            <Typography sx={{mb:'30px'}}>We want your child to feel comfortable, loved and free. Our organic and
+            <Typography sx={{mb:'30px'}} variant='body1'>We want your child to feel comfortable, loved and free. Our organic and
                 fairtrade clothing ensures that your baby can
                 play and be happy</Typography>
-            <Button variant="contained">VIEW MORE</Button>
+            <Button variant="mainButton">VIEW MORE</Button>
                 </Box>
 
                 <Box>
