@@ -3,6 +3,7 @@ import {Box} from "@mui/material";
 import Nav from "./Nav";
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import{blue} from '@mui/material/colors'
+import Main from "./Main";
 
 const theme = createTheme({
     palette:{
@@ -14,12 +15,17 @@ const theme = createTheme({
             bg_main: '#fff',
             bg_second: '#FADAAC',
         },
-        textcolor:{
+        textColor:{
             main: '#2E2E2E',
             second: '#fff',
         }
+    },
+    typography:{
+        h2:{
+            fontFamily: " 'Prata', serif",
+            fontSize: "55px",
+        }
     }
-    //typography
 })
 
 const MyComponent = () => {
@@ -27,6 +33,7 @@ const MyComponent = () => {
         <ThemeProvider theme={theme}>
         <Box>
             <Nav></Nav>
+            <Main></Main>
         </Box>
         </ThemeProvider>
     );
