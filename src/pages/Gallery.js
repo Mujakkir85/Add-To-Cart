@@ -47,7 +47,7 @@ const Gallery = () => {
             </Grid>
             <Stack alignItems="center" mb={10}>
                 <Button variant="mainButton"
-                        sx={{ "&:hover": { backgroundColor: "#000" }, width:"15%" }}>Discover more</Button>
+                        sx={{width:"15%"}}>Discover more</Button>
             </Stack>
         </Box>
     )

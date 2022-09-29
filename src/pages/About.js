@@ -21,7 +21,7 @@ const About = () => {
                         At the end of the day,
                         we are about making the world a better place.</Typography>
                     <Button variant="mainButton"
-                            sx={{ "&:hover": { backgroundColor: "#000" }, width:"30%" }}>Discover</Button>
+                            sx={{width:"30%"}}>Discover</Button>
                 </Stack>
 
                 <Stack>

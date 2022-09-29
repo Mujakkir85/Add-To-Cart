@@ -4,9 +4,6 @@ import {Box, Grid, Button, Stack, styled, Typography} from "@mui/material";
 const CustomButton = styled(Button)({
     position: 'absolute',
     bottom: '-40px',
-    '&:hover':{
-        backgroundColor: "#000"
-    },
     width: '40%'
 })
 
