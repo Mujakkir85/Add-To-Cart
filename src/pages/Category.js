@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Grid, Button, Stack, styled} from "@mui/material";
+import {Box, Grid, Button, Stack, styled, Typography} from "@mui/material";
 
 const CustomButton = styled(Button)({
     position: 'absolute',
@@ -16,7 +16,15 @@ const Category = () =>{
     const image3 = 'https://images.unsplash.com/photo-1527866512907-a35a62a0f6c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjcyNTgzfQ&w=392&q=70&auto=format&fit=crop&h=496'
     return(
         <Box>
-            <Grid container width="74%" mx="auto" spacing={1} my={10}>
+            <Stack alignItems="center" mt={7} spacing={4}>
+               <Typography variant="h2">Explore your baby's needs...</Typography>
+                <Stack alignItems="center">
+               <Typography variant="body1" >From baby accessories to children's clothing, there's something for
+               </Typography>
+               <Typography variant='body1'>everyone in our store.</Typography>
+                </Stack>
+            </Stack>
+            <Grid container width="74%" mx="auto" spacing={1} mt={7} mb={15}>
                 <Grid item xs={12} sm={6} md={4}>
                     <Stack alignItems="center" position="relative">
                     <img

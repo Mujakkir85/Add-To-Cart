@@ -5,6 +5,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import{blue} from '@mui/material/colors'
 import Main from "./Main";
 import Category from "./Category";
+import About from "./About";
 
 const theme = createTheme({
     palette:{
@@ -61,6 +62,7 @@ const MyComponent = () => {
             <Nav></Nav>
             <Main></Main>
             <Category></Category>
+            <About></About>
         </Box>
         </ThemeProvider>
     );
