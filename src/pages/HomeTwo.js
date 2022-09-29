@@ -36,7 +36,7 @@ const theme = createTheme({
             variants:[
                 {
                     props: {variant: 'mainButton'},
-                    style:{
+                    style: {
                         backgroundColor: "#000",
                         color: "white",
                         cursor: "pointer",
@@ -44,15 +44,10 @@ const theme = createTheme({
                         paddingBottom: '15px',
                         paddingLeft: '45px',
                         paddingRight: '45px',
+                        borderRadius: '0px'
                     }
-
                 }
             ],
-            defaultProps: {
-                disableElevation: true,
-                disableFocusRipple: true,
-                disableRipple: true,
-            }
         }
     }
 })

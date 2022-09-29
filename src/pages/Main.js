@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Button, Stack, Typography} from "@mui/material";
 
+
 const Main = () => {
     const image = 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/tixlyvnpr7/nynne-schroder-unsplash-A0xnbgZ4WxTJlN3R.jpg'
     return (
@@ -11,7 +12,7 @@ const Main = () => {
             <Typography sx={{mb:'30px'}} variant='body1'>We want your child to feel comfortable, loved and free. Our organic and
                 fairtrade clothing ensures that your baby can
                 play and be happy</Typography>
-            <Button variant="mainButton">VIEW MORE</Button>
+            <Button sx={{ "&:hover": { backgroundColor: "#000" }} } variant="mainButton">VIEW MORE</Button>
                 </Box>
 
                 <Box>

@@ -51,12 +51,12 @@ const Nav = () =>{
                         flexGrow: 1,
                         justifyContent: 'space-between',
                         py: '30px',
-                        px: '100px'
+                        px: '90px'
                     }}>
                     <Typography
-                        variant="h5"
+                        variant="h4"
                         component="div"
-                        sx={{ display: {xs:'none', sm:'block'}}}
+                        sx={{ display: {xs:'none', sm:'block'}, fontWeight: '700px'}}
                     > TIXLY FURNITURE</Typography>
 
                     <Box sx={{display: {xs:'none', sm:'block'}}}>
