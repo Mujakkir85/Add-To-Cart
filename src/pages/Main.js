@@ -12,7 +12,7 @@ const Main = () => {
             <Typography sx={{mb:'30px'}} variant='body1'>We want your child to feel comfortable, loved and free. Our organic and
                 fairtrade clothing ensures that your baby can
                 play and be happy</Typography>
-            <Button sx={{ "&:hover": { backgroundColor: "#000" }} } variant="mainButton">VIEW MORE</Button>
+            <Button sx={{ "&:hover": { backgroundColor: "#000" } }} variant="mainButton">VIEW MORE</Button>
                 </Box>
 
                 <Box>

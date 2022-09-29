@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import {Box} from "@mui/material";
 
-const MyComponent = () => {
-    return (
-        <div>
+const Category = () =>{
+    return(
+        <Box>
             
-        </div>
-    );
-};
+        </Box>
+    )
+}
 
-export default MyComponent;
+export default Category
