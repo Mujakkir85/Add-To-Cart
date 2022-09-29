@@ -47,7 +47,7 @@ const theme = createTheme({
                         paddingLeft: '45px',
                         paddingRight: '45px',
                         borderRadius: '0px',
-                        width: '50%'
+                        width: '30%'
                     }
                 }
             ],

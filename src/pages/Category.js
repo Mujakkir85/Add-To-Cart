@@ -6,7 +6,8 @@ const CustomButton = styled(Button)({
     bottom: '-40px',
     '&:hover':{
         backgroundColor: "#000"
-    }
+    },
+    width: '40%'
 })
 
 
@@ -30,7 +31,7 @@ const Category = () =>{
                     <img
                      src={`${image1}`}
                      />
-                        <CustomButton variant='mainButton' sx={{width:"40%"}}>Accessories</CustomButton>
+                        <CustomButton variant='mainButton' >Accessories</CustomButton>
                     </Stack>
                 </Grid>
 
@@ -39,7 +40,7 @@ const Category = () =>{
                     <img
                         src={`${image2}`}
                     />
-                        <CustomButton variant='mainButton' sx={{width:"40%"}}>Clothes</CustomButton>
+                        <CustomButton variant='mainButton'>Clothes</CustomButton>
                     </Stack>
                 </Grid>
 
@@ -48,7 +49,7 @@ const Category = () =>{
                     <img
                         src={`${image3}`}
                     />
-                        <CustomButton variant="mainButton" sx={{width:"40%"}} >Toys</CustomButton>
+                        <CustomButton variant="mainButton" >Toys</CustomButton>
                     </Stack>
 
                 </Grid>
