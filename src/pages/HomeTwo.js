@@ -45,7 +45,8 @@ const theme = createTheme({
                         paddingBottom: '15px',
                         paddingLeft: '45px',
                         paddingRight: '45px',
-                        borderRadius: '0px'
+                        borderRadius: '0px',
+                        width: '50%'
                     }
                 }
             ],

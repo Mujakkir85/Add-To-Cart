@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, Button, Stack} from "@mui/material";
 
 
 const Category = () =>{
@@ -8,32 +8,36 @@ const Category = () =>{
     const image3 = 'https://images.unsplash.com/photo-1527866512907-a35a62a0f6c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjcyNTgzfQ&w=392&q=70&auto=format&fit=crop&h=496'
     return(
         <Box>
-            <Grid container>
+            <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} md={4}>
-                    <Grid container justifyContent="center">
-                     <img
+                    <Stack justifyContent="center">
+                    <img
+                        width="80%"
                      src={`${image1}`}
                      />
-                    <button>Accessories</button>
-                    </Grid>
+                        <Button variant='mainButton' sx={{width:"40%"}}>Accessories</Button>
+                    </Stack>
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={4}>
-                    <Grid container justifyContent="center">
+                    <Stack>
                     <img
+                        width="80%"
                         src={`${image2}`}
                     />
-                    <button>Clothes</button>
-                    </Grid>
+                        <Button variant='mainButton' sx={{width:"40%"}}>Clothes</Button>
+                    </Stack>
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={4}>
-                    <Grid container justifyContent="center">
+                    <Stack>
                     <img
+                        width="80%"
                         src={`${image3}`}
                     />
-                    <button>Toys</button>
-                    </Grid>
+                        <Button variant="mainButton" sx={{width:"40%"}} >Toys</Button>
+                    </Stack>
+
                 </Grid>
             </Grid>
         </Box>
