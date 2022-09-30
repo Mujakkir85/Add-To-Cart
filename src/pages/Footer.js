@@ -10,10 +10,15 @@ const CustomFooter = styled(Box)(({theme}) =>({
 const Footer = () => {
     return (
         <CustomFooter>
-            <Stack direction="row" mx="100px" my={10}>
+            <Stack
+                mx="100px"
+                py="100px"
+                direction="row"
+                spacing={4}
+            >
                 <Box flexGrow={1}>
-                <Typography variant="h4">Address</Typography>
-                <Typography variant="h6">3721 Single Street <br></br> Quincy, MA 02169</Typography>
+                    <Typography variant="h4">Address</Typography>
+                    <Typography variant="h6">3721 Single Street <br></br> Quincy, MA 02169</Typography>
                 </Box>
 
                 <Box flexGrow={1}>
@@ -29,10 +34,15 @@ const Footer = () => {
                 <Box flexGrow={3} >
                     <Typography variant="h6">Subscribe to our newsLatter</Typography>
                     <Button
-                        variant="contained"
+                        variant="mainButton"
                         sx={{
                             bgcolor: "primary.dark",
-                            color: "primary.main"
+                            color: "primary.main",
+                            width: "25%",
+                            '&:hover':{
+                                backgroundColor: "#fff"
+                            }
+                            //"&:hover": { backgroundColor: "#fff" }
                     }}>
                         Submit</Button>
                 </Box>
