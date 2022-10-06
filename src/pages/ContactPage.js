@@ -5,7 +5,7 @@ import contactImage from "./Assests/contact.webp"
 const ContactPage = () => {
     return (
         <Stack alignItems="center">
-            <Stack xs={{direction:"column"}} md={{direction:"row"}} spacing={14}  >
+            <Stack  direction={{xs: 'column', md:'row' }} spacing={14}  >
               <Box>
                   <img src={`${contactImage}`}/>
               </Box>
