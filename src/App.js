@@ -10,19 +10,19 @@ import ContactPage from "./pages/ContactPage";
 import Footer from "./pages/Footer";
 
 function App() {
-  return (
-    //<Home></Home>
-      <ThemeProvider theme={theme}>
-          <Nav></Nav>
-          <Routes>
-              <Route path='/' element={<HomeTwo></HomeTwo>}></Route>
-              <Route path='/HOME' element={<HomeTwo></HomeTwo>}></Route>
-              <Route path='/SHOP' element={<Category></Category>}></Route>
-              <Route path='/CONTACT' element={<ContactPage></ContactPage>}></Route>
-          </Routes>
-          <Footer></Footer>
-      </ThemeProvider>
-  );
+    return (
+        //<Home></Home>
+        <ThemeProvider theme={theme}>
+            <Nav></Nav>
+            <Routes>
+                <Route path='/' element={<HomeTwo></HomeTwo>}></Route>
+                <Route path='/HOME' element={<HomeTwo></HomeTwo>}></Route>
+                <Route path='/SHOP' element={<Category></Category>}></Route>
+                <Route path='/CONTACT' element={<ContactPage></ContactPage>}></Route>
+            </Routes>
+            <Footer></Footer>
+        </ThemeProvider>
+    );
 }
 
 export default App;

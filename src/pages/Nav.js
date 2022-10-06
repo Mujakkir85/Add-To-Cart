@@ -8,7 +8,7 @@ const SimpleAppBar = styled(AppBar)(({theme}) =>({
     color: theme.palette.primary.main,
     backgroundColor: theme.palette.background.bg_main,
     boxShadow: 'none',
-    position: 'static',
+   // position: 'static',
 }))
 
 const NavButton = styled(Button)(({theme})=>({
