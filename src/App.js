@@ -5,18 +5,19 @@ import {ThemeProvider} from '@mui/material/styles';
 import Nav from "./pages/Nav";
 import React from "react";
 import { Routes, Route } from 'react-router-dom'
-import Contact from "./pages/Contact";
+import Category from "./pages/Category";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
     //<Home></Home>
       <ThemeProvider theme={theme}>
         <Nav></Nav>
-          {/*<HomeTwo></HomeTwo>*/}
           <Routes>
               <Route path='/' element={<HomeTwo></HomeTwo>}></Route>
               <Route path='/HOME' element={<HomeTwo></HomeTwo>}></Route>
-              <Route path="/CONTACT" elements={<Contact></Contact>} ></Route>
+              <Route path='/SHOP' element={<Category></Category>}></Route>
+              <Route path='/CONTACT' element={<ContactPage></ContactPage>}></Route>
           </Routes>
       </ThemeProvider>
   );

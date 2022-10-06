@@ -40,7 +40,7 @@ const Nav = () =>{
                             >
                                 <Stack direction="column" role="presentation" onClick={closeMenu}>
                                     {navItems.map((item)=>(
-                                        <NavButton>
+                                        <NavButton component={Link} to ={`${item}`} >
                                             {item}
                                         </NavButton>
                                     ))}
