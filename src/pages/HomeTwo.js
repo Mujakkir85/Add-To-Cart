@@ -18,7 +18,6 @@ const MyComponent = () => {
             <Category></Category>
             <About></About>
             <Gallery></Gallery>
-            <Footer></Footer>
         </Box>
        // </ThemeProvider>
     );
