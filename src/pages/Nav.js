@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Box, Typography, AppBar, Toolbar, IconButton, styled, List, Button, Stack, Drawer} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+import {Link} from 'react-router-dom'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const SimpleAppBar = styled(AppBar)(({theme}) =>({
@@ -62,7 +63,8 @@ const Nav = () =>{
                     <Box sx={{display: {xs:'none', sm:'block'}}}>
                         {navItems.map((item)=>(
                             <NavButton
-                            sx={{px:4,}}>
+                                component={Link} to ={`${item}`}
+                                sx={{px:4,}}>
                                 {item}
                             </NavButton>
                         ))}
